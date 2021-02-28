@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block main %} 
+<div class="profile">
+	<div class="profile-head"> 
+		<img class ="photo" src="{{url_for('static', filename='Pic of me.jpg')}}" alt="profile photo"> 
+		<h1>Jhevoy Jacas</h1> 
+		<h2>@jhevoyjacasofficial</h2> <h2>Kingston, Jamaica</h2> 
+		<h2>{{date_joined}}</h2> 
+	</div> 
+	<div class="profile-body"> 
+		<p> I am a smart and talented young man who adores web development and UX design, adept in both fields of study. Contact me if you'd love to collaborate togehther on a new project and let my skills speak for themselves! </p> 
+		<ul> 
+			<li> <span class="number">10</span> 
+				<span>Posts</span> 
+			</li> 
+
+				<li> <span class="number">350</span> 
+					<span>Following</span> 
+				</li> 
+
+				<li> <span class="number">1000</span> 
+					<span>Followers</span> 
+				</li> 
+			</ul> 
+			<button class="btn">Follow</button> 
+		</div> 
+	</div> 
+
+{% endblock %}
